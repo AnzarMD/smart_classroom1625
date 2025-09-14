@@ -197,6 +197,7 @@ def transformBoxInvert(pt, bbox, resH, resW):
 def _box_to_center_scale(x, y, w, h, aspect_ratio=1.0, scale_mult=1.25):
     """Convert box coordinates to center and scale.
     adapted from https://github.com/Microsoft/human-pose-estimation.pytorch
+    
     """
     pixel_std = 1
     center = np.zeros((2), dtype=np.float32)
